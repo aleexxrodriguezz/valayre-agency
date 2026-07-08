@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Valayre Agency — Ingeniería de software con IA & diseño web premium</title>
+  <meta name="description" content="Agencia de desarrollo de sistemas complejos con Inteligencia Artificial y webs premium a medida. Diseño impecable, entrega en máximo 4 días. Presupuesto a medida — llámanos a cualquier hora." />
+  <meta name="theme-color" content="#F4F1EA" />
+
+  <meta property="og:title" content="Valayre Agency — Software con IA & diseño web premium" />
+  <meta property="og:description" content="Sistemas complejos con IA y webs premium. Diseño impecable, entrega en 4 días. Presupuesto a medida." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://agency.valayre.com" />
+
+  <link rel="icon" type="image/png" href="assets/va-monogram.png" />
+  <link rel="apple-touch-icon" href="assets/va-monogram.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Bricolage Grotesque = única tipografía (display + texto). -->
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-lang="es">
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <img src="assets/va-monogram.png" alt="" class="loader__mark" />
+      <div class="loader__bar"><span class="loader__fill" id="loaderFill"></span></div>
+    </div>
+    <span class="loader__count" id="loaderCount">0</span>
+  </div>
+
+  <!-- ===================== FX LAYERS ===================== -->
+  <canvas class="fx-canvas" id="fxCanvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label" id="cursorLabel"></span></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="#top" class="brand" data-cursor="Inicio" aria-label="Valayre Agency">
+        <img src="assets/va-monogram.png" alt="" class="brand__mark" />
+        <span class="brand__text"><b>VALAYRE</b><i>Agency</i></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#enfoque" data-i18n="nav.approach">Enfoque</a>
+        <a href="#servicios" data-i18n="nav.services">Servicios</a>
+        <a href="#trabajos" data-i18n="nav.work">Trabajos</a>
+        <a href="#presupuesto" data-i18n="nav.pricing">Presupuesto</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="lang" id="langSwitch" aria-label="Idioma / Language">
+          <span data-lang-opt="es" class="is-active">ES</span><i>/</i><span data-lang-opt="en">EN</span>
+        </button>
+        <a href="tel:+34623286863" class="btn btn--solid nav__cta" data-magnetic data-cursor="Llamar" data-i18n="nav.cta">Llamar ahora</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="wrap hero__inner">
+        <p class="eyebrow hero__eyebrow" data-scramble data-i18n="hero.eyebrow">IA · Sistemas complejos · Web premium</p>
+
+        <h1 class="hero__title">
+          <span class="line" data-i18n="hero.t1">Ingeniería de software</span>
+          <span class="line" data-i18n="hero.t2">con Inteligencia Artificial</span>
+          <span class="line line--accent" data-i18n="hero.t3">y diseño web impecable.</span>
+        </h1>
+
+        <div class="hero__foot">
+          <p class="hero__lead" data-i18n="hero.lead">
+            Construimos sistemas a medida y webs de altísimo nivel. Diseño impecable,
+            ingeniería seria y entrega en un máximo de 4 días.
+          </p>
+          <div class="hero__cta">
+            <a href="#presupuesto" class="btn btn--solid btn--lg" data-magnetic data-cursor="Reservar" data-i18n="hero.cta1">Reservar una llamada</a>
+            <a href="tel:+34623286863" class="btn btn--line btn--lg" data-magnetic data-cursor="Llamar" data-i18n="hero.cta2">Llamar ahora</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__meta wrap">
+        <span class="hero__avail"><i class="dot"></i><span data-i18n="hero.avail">Disponibles para llamar a cualquier hora</span></span>
+        <a href="#enfoque" class="hero__scroll" data-cursor="Bajar"><span data-i18n="hero.scroll">Descubrir</span><i></i></a>
+      </div>
+    </section>
+
+    <!-- ===================== MARQUEE ===================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marquee">
+        <span>Desarrollo web</span><i>✦</i><span>Sistemas con IA</span><i>✦</i><span>Automatización</span><i>✦</i>
+        <span>Agentes inteligentes</span><i>✦</i><span>Diseño premium</span><i>✦</i><span>Integraciones</span><i>✦</i>
+        <span>Rendimiento</span><i>✦</i><span>SEO técnico</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ===================== MANIFESTO ===================== -->
+    <section class="manifesto" id="enfoque">
+      <div class="wrap">
+        <p class="eyebrow reveal" data-i18n="man.eyebrow">Nuestro enfoque</p>
+        <h2 class="manifesto__title">
+          <span class="w" data-i18n="man.t1">Calidad</span>
+          <span class="w" data-i18n="man.t2">de</span>
+          <span class="w" data-i18n="man.t3">agencia</span>
+          <span class="w" data-i18n="man.t4">grande.</span>
+          <span class="w w--mut" data-i18n="man.t5">Precio</span>
+          <span class="w w--mut" data-i18n="man.t6">y</span>
+          <span class="w w--mut" data-i18n="man.t7">velocidad</span>
+          <span class="w w--mut" data-i18n="man.t8">que</span>
+          <span class="w w--mut" data-i18n="man.t9">nadie</span>
+          <span class="w w--mut" data-i18n="man.t10">iguala.</span>
+        </h2>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="services" id="servicios">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <p class="eyebrow" data-i18n="serv.eyebrow">Lo que hacemos</p>
+          <h2 class="sec-title" data-i18n="serv.title">Dos disciplinas, un estándar.</h2>
+        </header>
+
+        <div class="srv">
+          <article class="srv__item reveal" data-cursor="Ver">
+            <span class="srv__idx">01</span>
+            <div class="srv__body">
+              <h3 class="srv__title" data-i18n="serv.1.t">Sistemas complejos con IA</h3>
+              <p class="srv__text" data-i18n="serv.1.d">Agentes, automatizaciones y herramientas a medida que eliminan trabajo manual y escalan tu operación. Ingeniería seria, no experimentos.</p>
+            </div>
+            <ul class="srv__tags">
+              <li data-i18n="serv.1.a">Agentes con IA</li>
+              <li data-i18n="serv.1.b">Automatización</li>
+              <li data-i18n="serv.1.c">Integraciones</li>
+              <li data-i18n="serv.1.e">Datos</li>
+            </ul>
+          </article>
+
+          <article class="srv__item reveal" data-cursor="Ver">
+            <span class="srv__idx">02</span>
+            <div class="srv__body">
+              <h3 class="srv__title" data-i18n="serv.2.t">Webs premium a medida</h3>
+              <p class="srv__text" data-i18n="serv.2.d">Landings y sitios de estética impecable, rápidos y 100% responsive. Diseño personalizado orientado a conversión, sin plantillas. Empezando por el nuestro.</p>
+            </div>
+            <ul class="srv__tags">
+              <li data-i18n="serv.2.a">Diseño a medida</li>
+              <li data-i18n="serv.2.b">Rendimiento</li>
+              <li data-i18n="serv.2.c">SEO técnico</li>
+              <li data-i18n="serv.2.e">Responsive</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== APPROACH / PROCESS ===================== -->
+    <section class="process">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <p class="eyebrow" data-i18n="proc.eyebrow">Cómo trabajamos</p>
+          <h2 class="sec-title" data-i18n="proc.title">De la primera llamada a online en 4 días.</h2>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__n">01</span>
+            <h3 class="step__t" data-i18n="proc.1.t">Llamada</h3>
+            <p class="step__d" data-i18n="proc.1.d">Entendemos tu negocio y objetivos. Presupuesto cerrado, sin sorpresas.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__n">02</span>
+            <h3 class="step__t" data-i18n="proc.2.t">Diseño</h3>
+            <p class="step__d" data-i18n="proc.2.d">Dirección visual a medida de tu marca. Tú validas, nosotros pulimos.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__n">03</span>
+            <h3 class="step__t" data-i18n="proc.3.t">Ingeniería</h3>
+            <p class="step__d" data-i18n="proc.3.d">Construcción rápida y sólida. Web, sistema o IA con calidad de agencia.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__n">04</span>
+            <h3 class="step__t" data-i18n="proc.4.t">Entrega</h3>
+            <p class="step__d" data-i18n="proc.4.d">Publicamos y te acompañamos. Mantenimiento opcional desde 30&nbsp;€/mes.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== STATS ===================== -->
+    <section class="stats">
+      <div class="wrap stats__grid">
+        <div class="stat reveal">
+          <span class="stat__n" data-count="4" data-prefix="≤ " data-suffix="" data-i18n-suffix="stat.days"> días</span>
+          <span class="stat__l" data-i18n="stat.1">De la idea a online</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__n" data-count="100" data-prefix="" data-suffix=" €">100 €</span>
+          <span class="stat__l" data-i18n="stat.2">Desde, por web a medida</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__n" data-count="100" data-prefix="" data-suffix="%">100%</span>
+          <span class="stat__l" data-i18n="stat.3">Adaptada a móvil</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__n" data-count="24" data-prefix="" data-suffix="h">24h</span>
+          <span class="stat__l" data-i18n="stat.4">Disponibles para llamar</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WORK ===================== -->
+    <section class="work" id="trabajos">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <p class="eyebrow" data-i18n="work.eyebrow">Trabajos</p>
+          <h2 class="sec-title" data-i18n="work.title">Selección de proyectos.</h2>
+          <p class="sec-sub" data-i18n="work.sub">Próximamente. Estamos preparando los casos que mejor nos representan.</p>
+        </header>
+
+        <div class="work__grid">
+          <figure class="proj reveal" data-cursor="Pronto"><div class="proj__ph"></div><figcaption><span data-i18n="work.1">Proyecto</span><i data-i18n="work.soon">Próximamente</i></figcaption></figure>
+          <figure class="proj reveal" data-cursor="Pronto"><div class="proj__ph"></div><figcaption><span data-i18n="work.2">Proyecto</span><i data-i18n="work.soon">Próximamente</i></figcaption></figure>
+          <figure class="proj reveal" data-cursor="Pronto"><div class="proj__ph"></div><figcaption><span data-i18n="work.3">Proyecto</span><i data-i18n="work.soon">Próximamente</i></figcaption></figure>
+          <figure class="proj reveal" data-cursor="Pronto"><div class="proj__ph"></div><figcaption><span data-i18n="work.4">Proyecto</span><i data-i18n="work.soon">Próximamente</i></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRESUPUESTO (single, no plans) ===================== -->
+    <section class="quote" id="presupuesto">
+      <div class="wrap quote__inner">
+        <p class="eyebrow reveal" data-i18n="quote.eyebrow">Presupuesto</p>
+        <h2 class="quote__title reveal" data-i18n="quote.title">Sin planes cerrados. Un precio a medida de lo que necesitas.</h2>
+
+        <div class="quote__range reveal">
+          <div class="quote__figure">
+            <span class="quote__from" data-i18n="quote.from">Normalmente entre</span>
+            <span class="quote__amount">100 – 300 €</span>
+            <span class="quote__note" data-i18n="quote.maint">+ mantenimiento opcional 30–60&nbsp;€/mes</span>
+          </div>
+          <p class="quote__desc" data-i18n="quote.desc">
+            Cada proyecto es distinto, así que el precio depende de tu necesidad concreta.
+            Llámanos a cualquier hora y te damos un presupuesto claro, sin compromiso.
+          </p>
+        </div>
+
+        <div class="quote__cta reveal">
+          <a href="tel:+34623286863" class="btn btn--solid btn--lg" data-magnetic data-cursor="Llamar" data-i18n="quote.cta1">Llamar para presupuesto</a>
+          <a href="mailto:hello@valayre.com?subject=Presupuesto%20—%20Valayre%20Agency" class="btn btn--line btn--lg" data-magnetic data-cursor="Escribir" data-i18n="quote.cta2">Escribir un email</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FINAL CTA ===================== -->
+    <section class="cta" id="contacto">
+      <div class="wrap cta__inner">
+        <p class="eyebrow eyebrow--inv reveal" data-i18n="cta.eyebrow">Hablemos</p>
+        <h2 class="cta__title">
+          <span class="line" data-i18n="cta.t1">Cuéntanos tu idea.</span>
+          <span class="line" data-i18n="cta.t2">La tienes online esta semana.</span>
+        </h2>
+        <div class="cta__actions reveal">
+          <a href="tel:+34623286863" class="btn btn--solid-inv btn--lg" data-magnetic data-cursor="Llamar">+34 623 286 863</a>
+          <a href="mailto:hello@valayre.com" class="btn btn--line-inv btn--lg" data-magnetic data-cursor="Escribir">hello@valayre.com</a>
+        </div>
+        <p class="cta__avail reveal"><i class="dot"></i><span data-i18n="cta.avail">Disponibles para llamar a cualquier hora, cualquier día</span></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap footer__top">
+      <div class="footer__brand">
+        <span class="footer__word">VALAYRE</span>
+        <span class="footer__sub">Agency</span>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <p class="footer__label" data-i18n="footer.contact">Contacto</p>
+          <a href="mailto:hello@valayre.com" data-cursor="Escribir">hello@valayre.com</a>
+          <a href="tel:+34623286863" data-cursor="Llamar">+34 623 286 863</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__label" data-i18n="footer.address">Dirección</p>
+          <p>Calle Limón, 20, Planta 0</p>
+          <p>Torrellano, Alicante</p>
+        </div>
+        <div class="footer__col">
+          <p class="footer__label" data-i18n="footer.site">Navegación</p>
+          <a href="#servicios" data-i18n="nav.services">Servicios</a>
+          <a href="#presupuesto" data-i18n="nav.pricing">Presupuesto</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer__bottom">
+      <p>© <span id="year"></span> Valayre Agency</p>
+      <p class="footer__parent">Reprocesados Textiles Jars®</p>
+    </div>
+  </footer>
+
+  <!-- ===================== MOBILE CALL BAR ===================== -->
+  <div class="callbar" id="callbar">
+    <a href="tel:+34623286863" class="callbar__a callbar__call" data-i18n="callbar.call">Llamar ahora</a>
+    <a href="#presupuesto" class="callbar__a callbar__book" data-i18n="callbar.book">Presupuesto</a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
