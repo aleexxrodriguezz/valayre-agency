@@ -73,8 +73,9 @@ main, .nav, .footer, .marquee, .callbar { position: relative; z-index: 2; }
 /* ---------- CUSTOM CURSOR ---------- */
 .cursor {
   position: fixed; top: 0; left: 0; z-index: 200; width: 9px; height: 9px; border-radius: 50%;
+  box-sizing: border-box; border: 1.5px solid transparent;
   background: var(--ink); pointer-events: none; transform: translate(-50%, -50%);
-  transition: width 0.35s var(--ease), height 0.35s var(--ease), background 0.35s var(--ease), opacity 0.3s;
+  transition: width 0.3s var(--ease), height 0.3s var(--ease), background 0.3s var(--ease), border-color 0.3s var(--ease), opacity 0.3s;
   display: none; mix-blend-mode: normal;
 }
 .cursor.is-active { display: block; }
@@ -85,16 +86,19 @@ main, .nav, .footer, .marquee, .callbar { position: relative; z-index: 2; }
   .cursor { display: none !important; }
   body.has-cursor, body.has-cursor a, body.has-cursor button { cursor: auto; }
 }
-.cursor.is-hover { width: 68px; height: 68px; background: var(--ink); }
-.cursor.is-hover.on-dark { background: var(--bone); }
+/* hover = small hollow ring so it never hides the target; label sits below */
+.cursor.is-hover { width: 34px; height: 34px; background: transparent; border-color: var(--ink); }
+.cursor.is-hover.on-dark { background: transparent; border-color: var(--bone); }
 .cursor__label {
-  position: absolute; inset: 0; display: grid; place-items: center;
-  font-family: var(--sans); font-size: 11px; font-weight: 500; letter-spacing: 0.04em;
-  color: var(--bone); opacity: 0; transform: scale(0.6); transition: opacity 0.3s, transform 0.3s var(--ease);
-  text-transform: uppercase; white-space: nowrap;
+  position: absolute; top: 100%; left: 50%; margin-top: 9px;
+  padding: 4px 9px; border-radius: 999px; background: var(--ink); color: var(--bone);
+  font-family: var(--sans); font-size: 10px; font-weight: 600; letter-spacing: 0.05em;
+  opacity: 0; transform: translate(-50%, -4px) scale(0.8); transform-origin: top center;
+  transition: opacity 0.28s, transform 0.28s var(--ease);
+  text-transform: uppercase; white-space: nowrap; line-height: 1;
 }
-.cursor.on-dark .cursor__label { color: var(--ink); }
-.cursor.is-hover .cursor__label { opacity: 1; transform: scale(1); }
+.cursor.on-dark .cursor__label { background: var(--bone); color: var(--ink); }
+.cursor.is-hover .cursor__label { opacity: 1; transform: translate(-50%, 0) scale(1); }
 
 /* ---------- SCROLL PROGRESS ---------- */
 .scroll-progress {
