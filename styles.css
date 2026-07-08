@@ -78,6 +78,8 @@ main, .nav, .footer, .marquee, .callbar { position: relative; z-index: 2; }
   display: none; mix-blend-mode: normal;
 }
 .cursor.is-active { display: block; }
+/* over dark sections the base dot flips to bone so it stays visible */
+.cursor.on-dark { background: var(--bone); }
 /* pointer flourishes are desktop-only */
 @media (max-width: 1023px), (hover: none), (pointer: coarse) {
   .cursor { display: none !important; }
@@ -105,7 +107,7 @@ main, .nav, .footer, .marquee, .callbar { position: relative; z-index: 2; }
   position: fixed; inset: 0; z-index: 300; background: var(--bone);
   display: grid; place-items: center; transition: opacity 0.7s var(--ease), visibility 0.7s;
 }
-.loader.is-done { opacity: 0; visibility: hidden; }
+.loader.is-done { opacity: 0; visibility: hidden; pointer-events: none; }
 .loader__inner { display: flex; flex-direction: column; align-items: center; gap: 1.8rem; }
 .loader__mark { width: 46px; height: 46px; opacity: 0.9; animation: floaty 3s ease-in-out infinite; }
 @keyframes floaty { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }

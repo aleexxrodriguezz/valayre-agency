@@ -35,12 +35,12 @@
       'proc.1.t':'Llamada','proc.1.d':'Entendemos tu negocio y objetivos. Presupuesto cerrado, sin sorpresas.',
       'proc.2.t':'Diseño','proc.2.d':'Dirección visual a medida de tu marca. Tú validas, nosotros pulimos.',
       'proc.3.t':'Desarrollo','proc.3.d':'Construcción rápida y sólida, con las funcionalidades de IA que necesites. Calidad de agencia.',
-      'proc.4.t':'Entrega','proc.4.d':'Publicamos y te acompañamos. Mantenimiento opcional desde 30&nbsp;€/mes.',
+      'proc.4.t':'Entrega','proc.4.d':'Publicamos, te acompañamos y mantenemos tu web al día. Mantenimiento incluido desde 30&nbsp;€/mes.',
       'stat.days':' días','stat.1':'De la idea a online','stat.2':'Desde, por web a medida','stat.3':'Adaptada a móvil','stat.4':'Disponibles para llamar',
       'work.eyebrow':'Trabajos','work.title':'Selección de proyectos.','work.sub':'Próximamente. Estamos preparando los casos que mejor nos representan.',
       'work.1':'Proyecto','work.2':'Proyecto','work.3':'Proyecto','work.4':'Proyecto','work.soon':'Próximamente',
       'quote.eyebrow':'Presupuesto','quote.title':'Sin planes cerrados. Un precio a medida de lo que necesitas.',
-      'quote.from':'Normalmente entre','quote.maint':'+ mantenimiento opcional 30–60&nbsp;€/mes',
+      'quote.from':'Normalmente entre','quote.maint':'mantenimiento incluido · 30–60&nbsp;€/mes',
       'quote.desc':'Cada proyecto es distinto, así que el precio depende de tu necesidad concreta. Llámanos a cualquier hora y te damos un presupuesto claro, sin compromiso.',
       'quote.cta1':'Llamar para presupuesto','quote.cta2':'Escribir un email',
       'cta.eyebrow':'Hablemos','cta.t1':'Cuéntanos tu idea.','cta.t2':'La tienes online esta semana.',
@@ -66,12 +66,12 @@
       'proc.1.t':'Call','proc.1.d':'We understand your business and goals. Fixed quote, no surprises.',
       'proc.2.t':'Design','proc.2.d':'Visual direction tailored to your brand. You validate, we refine.',
       'proc.3.t':'Development','proc.3.d':'Fast, solid build with the AI features you need. Agency-grade quality.',
-      'proc.4.t':'Delivery','proc.4.d':'We launch and support you. Optional maintenance from €30/mo.',
+      'proc.4.t':'Delivery','proc.4.d':'We launch, support you and keep your site running. Maintenance included from €30/mo.',
       'stat.days':' days','stat.1':'From idea to online','stat.2':'From, per custom site','stat.3':'Mobile-ready','stat.4':'Available to call',
       'work.eyebrow':'Work','work.title':'Selected projects.','work.sub':'Coming soon. We are curating the cases that represent us best.',
       'work.1':'Project','work.2':'Project','work.3':'Project','work.4':'Project','work.soon':'Coming soon',
       'quote.eyebrow':'Quote','quote.title':'No fixed plans. A price tailored to what you need.',
-      'quote.from':'Typically between','quote.maint':'+ optional maintenance €30–60/mo',
+      'quote.from':'Typically between','quote.maint':'maintenance included · €30–60/mo',
       'quote.desc':'Every project is different, so the price depends on your specific need. Call us at any hour and we give you a clear quote, no strings attached.',
       'quote.cta1':'Call for a quote','quote.cta2':'Send an email',
       'cta.eyebrow':"Let's talk",'cta.t1':'Tell us your idea.','cta.t2':'It goes live this week.',
@@ -215,7 +215,12 @@
     document.body.classList.add('has-cursor');
     cur.classList.add('is-active');
     let mx = innerWidth/2, my = innerHeight/2, cx = mx, cy = my;
-    addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; }, { passive:true });
+    addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      // flip cursor to light while it's over any dark section (cursor has pointer-events:none, so it's ignored)
+      const under = document.elementFromPoint(mx, my);
+      cur.classList.toggle('on-dark', !!(under && under.closest('.cta')));
+    }, { passive:true });
     (function render(){
       cx = lerp(cx, mx, 0.2); cy = lerp(cy, my, 0.2);
       cur.style.transform = 'translate('+cx+'px,'+cy+'px) translate(-50%,-50%)';
@@ -225,7 +230,6 @@
     $$('[data-cursor], a, button').forEach(el=>{
       el.addEventListener('mouseenter', ()=>{
         cur.classList.add('is-hover');
-        cur.classList.toggle('on-dark', !!el.closest('.cta'));
         const lbl = el.getAttribute('data-cursor');
         label.textContent = lbl || '';
       });
