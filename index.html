@@ -27,10 +27,19 @@
   <!-- ===================== PRELOADER ===================== -->
   <div class="loader" id="loader" aria-hidden="true">
     <div class="loader__inner">
-      <img src="assets/va-monogram.png" alt="" class="loader__mark" />
-      <div class="loader__bar"><span class="loader__fill" id="loaderFill"></span></div>
+      <div class="loader__3d-wrapper">
+        <img src="assets/va-monogram.png" alt="Valayre Logo" class="loader__mark-3d" />
+      </div>
+      <div class="loader__title-wrapper">
+        <span class="loader__letter">V</span>
+        <span class="loader__letter">A</span>
+        <span class="loader__letter">L</span>
+        <span class="loader__letter">A</span>
+        <span class="loader__letter">Y</span>
+        <span class="loader__letter">R</span>
+        <span class="loader__letter">E</span>
+      </div>
     </div>
-    <span class="loader__count" id="loaderCount">0</span>
   </div>
 
   <!-- ===================== FX LAYERS ===================== -->
@@ -48,10 +57,12 @@
       </a>
 
       <nav class="nav__links" aria-label="Principal">
-        <a href="#enfoque" data-i18n="nav.approach">Enfoque</a>
-        <a href="#servicios" data-i18n="nav.services">Servicios</a>
-        <a href="#trabajos" data-i18n="nav.work">Trabajos</a>
-        <a href="#presupuesto" data-i18n="nav.pricing">Presupuesto</a>
+        <a href="index.html#enfoque" data-i18n="nav.approach">Enfoque</a>
+        <a href="diseno-web.html" data-i18n="nav.web">Diseño Web</a>
+        <a href="software.html" data-i18n="nav.software">Software</a>
+        <a href="automatizaciones.html" data-i18n="nav.auto">Automatizaciones</a>
+        <a href="studio.html" data-i18n="nav.studio">Studio</a>
+        <a href="textil.html" data-i18n="nav.textil">Textil</a>
       </nav>
 
       <div class="nav__actions">
@@ -126,38 +137,80 @@
     <section class="services" id="servicios">
       <div class="wrap">
         <header class="sec-head reveal">
-          <p class="eyebrow" data-i18n="serv.eyebrow">Lo que hacemos</p>
-          <h2 class="sec-title" data-i18n="serv.title">El mejor diseño, inteligencia integrada.</h2>
+          <p class="eyebrow" data-i18n="serv.eyebrow">Nuestras Áreas</p>
+          <h2 class="sec-title" data-i18n="serv.title">Soluciones digitales premium hechas a medida.</h2>
         </header>
 
         <div class="srv">
-          <article class="srv__item reveal" data-cursor="Ver">
+          <!-- 01: DISEÑO WEB -->
+          <a href="diseno-web.html" class="srv__item reveal" data-cursor="Entrar">
             <span class="srv__idx">01</span>
             <div class="srv__body">
-              <h3 class="srv__title" data-i18n="serv.1.t">Webs premium a medida</h3>
-              <p class="srv__text" data-i18n="serv.1.d">Diseñamos y desarrollamos tu web desde cero: estética impecable, rápida y 100% responsive. Diseño a medida orientado a conversión, sin plantillas. Empezando por el nuestro.</p>
+              <h3 class="srv__title" data-i18n="serv.web.t">Diseño Web Premium</h3>
+              <p class="srv__text" data-i18n="serv.web.d">Páginas web a medida que sorprenden. Creamos interfaces súper bonitas, rápidas y totalmente adaptadas a móviles. Diseñadas para enamorar a tus clientes y convencerlos de elegirte.</p>
             </div>
             <ul class="srv__tags">
-              <li data-i18n="serv.1.a">Diseño a medida</li>
-              <li data-i18n="serv.1.b">Rendimiento</li>
-              <li data-i18n="serv.1.c">SEO técnico</li>
-              <li data-i18n="serv.1.e">Responsive</li>
+              <li data-i18n="serv.web.tag1">Estética Exclusiva</li>
+              <li data-i18n="serv.web.tag2">Ultra Rápida</li>
+              <li data-i18n="serv.web.tag3">100% Adaptada a Móvil</li>
             </ul>
-          </article>
+          </a>
 
-          <article class="srv__item reveal" data-cursor="Ver">
+          <!-- 02: SOFTWARE -->
+          <a href="software.html" class="srv__item reveal" data-cursor="Entrar">
             <span class="srv__idx">02</span>
             <div class="srv__body">
-              <h3 class="srv__title" data-i18n="serv.2.t">Funcionalidades con IA</h3>
-              <p class="srv__text" data-i18n="serv.2.d">Potenciamos tu web con inteligencia artificial: chat, automatizaciones y herramientas a medida que trabajan por ti y elevan la experiencia de tus clientes.</p>
+              <h3 class="srv__title" data-i18n="serv.soft.t">Desarrollo de Software & Apps</h3>
+              <p class="srv__text" data-i18n="serv.soft.d">Damos vida a cualquier idea digital. Creamos aplicaciones móviles personalizadas y plataformas a medida (como nuestro sistema de Webs Automáticas en 1 minuto) para resolver necesidades únicas.</p>
             </div>
             <ul class="srv__tags">
-              <li data-i18n="serv.2.a">Chat con IA</li>
-              <li data-i18n="serv.2.b">Automatización</li>
-              <li data-i18n="serv.2.c">Integraciones</li>
-              <li data-i18n="serv.2.e">Contenido</li>
+              <li data-i18n="serv.soft.tag1">Aplicaciones a Medida</li>
+              <li data-i18n="serv.soft.tag2">Plataformas Cloud</li>
+              <li data-i18n="serv.soft.tag3">Cualquier Idea Digital</li>
             </ul>
-          </article>
+          </a>
+
+          <!-- 03: AUTOMATIZACIONES -->
+          <a href="automatizaciones.html" class="srv__item reveal" data-cursor="Entrar">
+            <span class="srv__idx">03</span>
+            <div class="srv__body">
+              <h3 class="srv__title" data-i18n="serv.auto.t">Automatizaciones con IA</h3>
+              <p class="srv__text" data-i18n="serv.auto.d">Haz que tu negocio trabaje en piloto automático. Conectamos tus herramientas de diario (emails, facturas, agendas, inventarios) para eliminar tareas aburridas sin mover un dedo.</p>
+            </div>
+            <ul class="srv__tags">
+              <li data-i18n="serv.auto.tag1">Ahorro de Tiempo</li>
+              <li data-i18n="serv.auto.tag2">IA Conectada</li>
+              <li data-i18n="serv.auto.tag3">Cero Errores Manuales</li>
+            </ul>
+          </a>
+
+          <!-- 04: STUDIO -->
+          <a href="studio.html" class="srv__item reveal" data-cursor="Entrar">
+            <span class="srv__idx">04</span>
+            <div class="srv__body">
+              <h3 class="srv__title" data-i18n="serv.studio.t">Valayre Studio</h3>
+              <p class="srv__text" data-i18n="serv.studio.d">Nuestra plataforma inteligente para marcas de ropa. Crea catálogos y showrooms automatizados de tus prendas en un solo clic utilizando modelos de IA y fondos personalizados.</p>
+            </div>
+            <ul class="srv__tags">
+              <li data-i18n="serv.studio.tag1">Modelos con IA</li>
+              <li data-i18n="serv.studio.tag2">Catálogos en 1 Clic</li>
+              <li data-i18n="serv.studio.tag3">studio.valayre.com</li>
+            </ul>
+          </a>
+
+          <!-- 05: TEXTIL -->
+          <a href="textil.html" class="srv__item reveal" data-cursor="Entrar">
+            <span class="srv__idx">05</span>
+            <div class="srv__body">
+              <h3 class="srv__title" data-i18n="serv.textil.t">Showroom & Producción Textil</h3>
+              <p class="srv__text" data-i18n="serv.textil.d">Creamos tu marca de ropa física de la A a la Z. Conectamos el diseño digital de vanguardia con bordados premium y estampaciones TDF de máxima resistencia que se fusionan en el tejido.</p>
+            </div>
+            <ul class="srv__tags">
+              <li data-i18n="serv.textil.tag1">Prendas Premium</li>
+              <li data-i18n="serv.textil.tag2">Estampación TDF</li>
+              <li data-i18n="serv.textil.tag3">Bordado Profesional</li>
+            </ul>
+          </a>
         </div>
       </div>
     </section>
@@ -297,8 +350,11 @@
         </div>
         <div class="footer__col">
           <p class="footer__label" data-i18n="footer.site">Navegación</p>
-          <a href="#servicios" data-i18n="nav.services">Servicios</a>
-          <a href="#presupuesto" data-i18n="nav.pricing">Presupuesto</a>
+          <a href="diseno-web.html" data-i18n="nav.web">Diseño Web</a>
+          <a href="software.html" data-i18n="nav.software">Software</a>
+          <a href="automatizaciones.html" data-i18n="nav.auto">Automatizaciones</a>
+          <a href="studio.html" data-i18n="nav.studio">Valayre Studio</a>
+          <a href="textil.html" data-i18n="nav.textil">Textil</a>
         </div>
       </div>
     </div>
@@ -312,6 +368,53 @@
   <div class="callbar" id="callbar">
     <a href="tel:+34623286863" class="callbar__a callbar__call" data-i18n="callbar.call">Llamar ahora</a>
     <a href="#presupuesto" class="callbar__a callbar__book" data-i18n="callbar.book">Presupuesto</a>
+  </div>
+
+  <!-- ===================== ASISTENTE IA CHATBOT ===================== -->
+  <div class="ai-chat" id="aiChat" aria-hidden="true">
+    <button class="ai-chat__trigger" id="aiChatTrigger" data-cursor="Chatear" aria-label="Abrir asistente de IA">
+      <div class="ai-chat__trigger-glow"></div>
+      <svg class="ai-chat__trigger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+      <span class="ai-chat__trigger-badge">AI</span>
+    </button>
+    <div class="ai-chat__window" id="aiChatWindow">
+      <div class="ai-chat__header">
+        <div class="ai-chat__header-info">
+          <div class="ai-chat__avatar">
+            <img src="assets/va-monogram.png" alt="AI" />
+            <span class="ai-chat__status-dot"></span>
+          </div>
+          <div>
+            <h4 class="ai-chat__title">Valayre Assistant</h4>
+            <p class="ai-chat__status" data-i18n="chat.online">En línea • Responderá al instante</p>
+          </div>
+        </div>
+        <button class="ai-chat__close" id="aiChatClose" aria-label="Cerrar chat">✕</button>
+      </div>
+      <div class="ai-chat__messages" id="aiChatMessages">
+        <div class="ai-chat__bubble ai-chat__bubble--bot">
+          <p data-i18n="chat.welcome">¡Hola! Soy el asistente inteligente de Valayre. ¿En qué puedo ayudarte a impulsar tu marca o negocio?</p>
+        </div>
+      </div>
+      <div class="ai-chat__suggestions" id="aiChatSuggestions">
+        <button class="ai-chat__suggest-btn" data-q="diseno" data-i18n="chat.q_design">¿Cómo son vuestras webs?</button>
+        <button class="ai-chat__suggest-btn" data-q="software" data-i18n="chat.q_software">¿Qué software podéis crear?</button>
+        <button class="ai-chat__suggest-btn" data-q="auto" data-i18n="chat.q_auto">¿Cómo me ayuda la automatización?</button>
+        <button class="ai-chat__suggest-btn" data-q="studio" data-i18n="chat.q_studio">¿Qué es Valayre Studio?</button>
+        <button class="ai-chat__suggest-btn" data-q="textil" data-i18n="chat.q_textil">¿Qué hacéis en la sección Textil?</button>
+      </div>
+      <form class="ai-chat__input-area" id="aiChatForm">
+        <input type="text" class="ai-chat__input" id="aiChatInput" placeholder="Pregúntame lo que quieras..." data-i18n-holder="chat.placeholder" />
+        <button type="submit" class="ai-chat__submit" aria-label="Enviar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </form>
+    </div>
   </div>
 
   <script src="app.js"></script>

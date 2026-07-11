@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Desarrollo de Software y Apps — Valayre Agency</title>
+  <meta name="description" content="Programamos cualquier idea digital. Creamos aplicaciones móviles, plataformas web y software a medida." />
+  <meta name="theme-color" content="#090B0F" />
+  <link rel="icon" type="image/png" href="assets/va-monogram.png" />
+  <link rel="apple-touch-icon" href="assets/va-monogram.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="software" class="theme-software">
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__3d-wrapper">
+        <img src="assets/va-monogram-white.png" alt="Valayre Logo" class="loader__mark-3d" />
+      </div>
+      <div class="loader__title-wrapper">
+        <span class="loader__letter">V</span>
+        <span class="loader__letter">A</span>
+        <span class="loader__letter">L</span>
+        <span class="loader__letter">A</span>
+        <span class="loader__letter">Y</span>
+        <span class="loader__letter">R</span>
+        <span class="loader__letter">E</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== FX LAYERS ===================== -->
+  <canvas class="fx-canvas" id="fxCanvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label" id="cursorLabel"></span></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="index.html" class="brand" data-cursor="Inicio" aria-label="Valayre Agency">
+        <img src="assets/va-monogram-white.png" alt="" class="brand__mark" />
+        <span class="brand__text"><b>VALAYRE</b><i>Agency</i></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Principal">
+        <a href="index.html#enfoque" data-i18n="nav.approach">Enfoque</a>
+        <a href="diseno-web.html" data-i18n="nav.web">Diseño Web</a>
+        <a href="software.html" data-i18n="nav.software" class="is-active">Software</a>
+        <a href="automatizaciones.html" data-i18n="nav.auto">Automatizaciones</a>
+        <a href="studio.html" data-i18n="nav.studio">Studio</a>
+        <a href="textil.html" data-i18n="nav.textil">Textil</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="lang" id="langSwitch" aria-label="Idioma / Language">
+          <span data-lang-opt="es" class="is-active">ES</span><i>/</i><span data-lang-opt="en">EN</span>
+        </button>
+        <a href="tel:+34623286863" class="btn btn--solid nav__cta" data-magnetic data-cursor="Llamar" data-i18n="nav.cta">Llamar ahora</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="sub-hero">
+      <div class="wrap">
+        <p class="eyebrow reveal" data-i18n="soft.eyebrow">PROGRAMACIÓN A MEDIDA</p>
+        <h1 class="sub-hero__title">
+          <span class="line" data-i18n="soft.title1">Cualquier idea digital</span>
+          <span class="line line--accent" data-i18n="soft.title2">la hacemos realidad.</span>
+        </h1>
+        <p class="sub-hero__lead reveal" data-i18n="soft.lead">
+          Desde herramientas internas que resuelven problemas diarios de tu empresa, hasta aplicaciones móviles y plataformas inteligentes complejas. Si puedes imaginarlo, podemos programarlo.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== CASE STUDY 1: WEBS AUTOMATICAS ===================== -->
+    <section class="soft-cases">
+      <div class="wrap">
+        <div class="case-grid">
+          <!-- Case 1 -->
+          <div class="case-item reveal">
+            <div class="case-item__content">
+              <span class="case-badge" data-i18n="soft.case1.badge">CASO DE USO: PLATAFORMAS AUTOMÁTICAS</span>
+              <h2 class="case-title" data-i18n="soft.case1.title">Creación de webs en 1 minuto</h2>
+              <p class="case-desc" data-i18n="soft.case1.desc1">
+                Imagina una plataforma donde solo tengas que escribir el nombre de un negocio y la ciudad donde se encuentra, y en menos de un minuto genere automáticamente una página web premium adaptada con su mapa, datos de contacto, textos enfocados a su sector y SEO local configurado.
+              </p>
+              <p class="case-desc" data-i18n="soft.case1.desc2">
+                Esto no es ciencia ficción: es un software real que hemos diseñado y programado. Demuestra cómo la tecnología y la Inteligencia Artificial pueden unirse para acelerar procesos que antes requerían semanas de trabajo humano a solo unos segundos.
+              </p>
+            </div>
+            <div class="case-item__visual">
+              <div class="tech-terminal">
+                <div class="tech-terminal__bar">
+                  <span class="tech-terminal__dot"></span>
+                  <span class="tech-terminal__dot"></span>
+                  <span class="tech-terminal__dot"></span>
+                  <span class="tech-terminal__title">generator.valayre.sys</span>
+                </div>
+                <div class="tech-terminal__body">
+                  <div class="tech-line"><span class="t-cyan">> system.init()</span> <span class="t-green">OK</span></div>
+                  <div class="tech-line"><span class="t-muted">// Leyendo parámetros del comercio...</span></div>
+                  <div class="tech-line">Nombre: <span class="t-yellow">"Restaurante La Olivar"</span></div>
+                  <div class="tech-line">Localidad: <span class="t-yellow">"Alicante"</span></div>
+                  <div class="tech-line"><span class="t-cyan">> ai.analyze_sector("Gastronomía")</span></div>
+                  <div class="tech-line"><span class="t-muted">// Generando estructura del sitio web...</span></div>
+                  <div class="tech-line"><span class="t-blue">> ui.generate_layout()</span> <span class="t-green">HECHO (0.3s)</span></div>
+                  <div class="tech-line"><span class="t-blue">> seo.inject_local_keywords()</span> <span class="t-green">HECHO</span></div>
+                  <div class="tech-line"><span class="t-cyan">> cloud.deploy_live()</span></div>
+                  <div class="tech-line"><span class="t-green">✔ URL en línea: laolivar-alicante.com</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 2 -->
+          <div class="case-item reveal">
+            <div class="case-item__content">
+              <span class="case-badge" data-i18n="soft.case2.badge">CASO DE USO: TEXTIL & INTELIGENCIA ARTIFICIAL</span>
+              <h2 class="case-title" data-i18n="soft.case2.title">Valayre Studio: Catálogos en 1 Clic</h2>
+              <p class="case-desc" data-i18n="soft.case2.desc1">
+                Para la industria de la moda, creamos un software integral en el que las marcas pueden subir la foto de una prenda y, de forma totalmente automática, el sistema genera el modelo en 3D, le coloca la prenda encima de forma realista, diseña fondos creativos de estudio y maqueta un catálogo digital completo con precios, tallas y materiales.
+              </p>
+              <p class="case-desc" data-i18n="soft.case2.desc2">
+                Un desarrollo complejo que permite a las empresas textiles ahorrar miles de euros en fotógrafos, modelos físicos, alquiler de estudios y edición gráfica, teniendo colecciones enteras listas para vender en minutos.
+              </p>
+              <a href="studio.html" class="btn btn--line btn--lg" data-magnetic data-cursor="Ver" data-i18n="soft.case2.cta">Saber más de Studio</a>
+            </div>
+            <div class="case-item__visual">
+              <div class="tech-grid-graphic">
+                <div class="tg-node tg-node--active"><span class="tg-label">PRENDA</span></div>
+                <div class="tg-line"></div>
+                <div class="tg-node tg-node--pulse"><span class="tg-label">IA MODELO</span></div>
+                <div class="tg-line"></div>
+                <div class="tg-node tg-node--active"><span class="tg-label">CATÁLOGO</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap footer__top">
+      <div class="footer__brand">
+        <span class="footer__word">VALAYRE</span>
+        <span class="footer__sub">Agency</span>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <p class="footer__label" data-i18n="footer.contact">Contacto</p>
+          <a href="mailto:hello@valayre.com" data-cursor="Escribir">hello@valayre.com</a>
+          <a href="tel:+34623286863" data-cursor="Llamar">+34 623 286 863</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__label" data-i18n="footer.address">Dirección</p>
+          <p>Calle Limón, 20, Planta 0</p>
+          <p>Torrellano, Alicante</p>
+        </div>
+        <div class="footer__col">
+          <p class="footer__label" data-i18n="footer.site">Navegación</p>
+          <a href="diseno-web.html" data-i18n="nav.web">Diseño Web</a>
+          <a href="software.html" data-i18n="nav.software">Software</a>
+          <a href="automatizaciones.html" data-i18n="nav.auto">Automatizaciones</a>
+          <a href="studio.html" data-i18n="nav.studio">Valayre Studio</a>
+          <a href="textil.html" data-i18n="nav.textil">Textil</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer__bottom">
+      <p>© <span id="year"></span> Valayre Agency</p>
+      <p class="footer__parent">Reprocesados Textiles Jars®</p>
+    </div>
+  </footer>
+
+  <!-- ===================== MOBILE CALL BAR ===================== -->
+  <div class="callbar" id="callbar">
+    <a href="tel:+34623286863" class="callbar__a callbar__call" data-i18n="callbar.call">Llamar ahora</a>
+    <a href="index.html#presupuesto" class="callbar__a callbar__book" data-i18n="callbar.book">Presupuesto</a>
+  </div>
+
+  <!-- ===================== ASISTENTE IA CHATBOT ===================== -->
+  <div class="ai-chat" id="aiChat" aria-hidden="true">
+    <button class="ai-chat__trigger" id="aiChatTrigger" data-cursor="Chatear" aria-label="Abrir asistente de IA">
+      <div class="ai-chat__trigger-glow"></div>
+      <svg class="ai-chat__trigger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+      <span class="ai-chat__trigger-badge">AI</span>
+    </button>
+    <div class="ai-chat__window" id="aiChatWindow">
+      <div class="ai-chat__header">
+        <div class="ai-chat__header-info">
+          <div class="ai-chat__avatar">
+            <img src="assets/va-monogram-white.png" alt="AI" />
+            <span class="ai-chat__status-dot"></span>
+          </div>
+          <div>
+            <h4 class="ai-chat__title">Valayre Assistant</h4>
+            <p class="ai-chat__status" data-i18n="chat.online">En línea • Responderá al instante</p>
+          </div>
+        </div>
+        <button class="ai-chat__close" id="aiChatClose" aria-label="Cerrar chat">✕</button>
+      </div>
+      <div class="ai-chat__messages" id="aiChatMessages">
+        <div class="ai-chat__bubble ai-chat__bubble--bot">
+          <p data-i18n="chat.welcome">¡Hola! Soy el asistente inteligente de Valayre. ¿En qué puedo ayudarte a impulsar tu marca o negocio?</p>
+        </div>
+      </div>
+      <div class="ai-chat__suggestions" id="aiChatSuggestions">
+        <button class="ai-chat__suggest-btn" data-q="diseno" data-i18n="chat.q_design">¿Cómo son vuestras webs?</button>
+        <button class="ai-chat__suggest-btn" data-q="software" data-i18n="chat.q_software">¿Qué software podéis crear?</button>
+        <button class="ai-chat__suggest-btn" data-q="auto" data-i18n="chat.q_auto">¿Cómo me ayuda la automatización?</button>
+        <button class="ai-chat__suggest-btn" data-q="studio" data-i18n="chat.q_studio">¿Qué es Valayre Studio?</button>
+        <button class="ai-chat__suggest-btn" data-q="textil" data-i18n="chat.q_textil">¿Qué hacéis en la sección Textil?</button>
+      </div>
+      <form class="ai-chat__input-area" id="aiChatForm">
+        <input type="text" class="ai-chat__input" id="aiChatInput" placeholder="Pregúntame lo que quieras..." data-i18n-holder="chat.placeholder" />
+        <button type="submit" class="ai-chat__submit" aria-label="Enviar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
