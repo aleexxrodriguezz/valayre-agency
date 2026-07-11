@@ -149,7 +149,17 @@
       'cta.eyebrow':'Hablemos','cta.t1':'Cuéntanos tu idea.','cta.t2':'La tienes online esta semana.',
       'cta.avail':'Disponibles para llamar a cualquier hora, cualquier día',
       'footer.contact':'Contacto','footer.address':'Dirección','footer.site':'Navegación',
-      'callbar.call':'Llamar ahora','callbar.book':'Presupuesto'
+      'callbar.call':'Llamar ahora','callbar.book':'Presupuesto',
+      'nav.contact':'Contacto',
+      'contact.eyebrow':'Hablemos',
+      'contact.title1':'Tu idea online',
+      'contact.title2':'esta semana.',
+      'contact.lead':'Disponibles para llamadas a cualquier hora, o si lo prefieres, escríbenos directamente por email, WhatsApp o redes sociales.',
+      'contact.card_title':'Información de Contacto',
+      'contact.email_lbl':'Correo Electrónico',
+      'contact.tel_lbl':'Teléfono / WhatsApp',
+      'contact.ig_lbl':'Instagram Personal',
+      'contact.adr_lbl':'Oficina Central'
     },
     en: {
       'nav.home':'Home','nav.approach':'Approach','nav.web':'Web Design','nav.software':'Software','nav.auto':'Automations','nav.studio':'Studio','nav.textil':'Textile','nav.cta':'Call now',
@@ -284,7 +294,17 @@
       'cta.eyebrow':"Let's talk",'cta.t1':'Tell us your idea.','cta.t2':'It goes live this week.',
       'cta.avail':'Available to call at any hour, any day',
       'footer.contact':'Contact','footer.address':'Address','footer.site':'Navigation',
-      'callbar.call':'Call now','callbar.book':'Quote'
+      'callbar.call':'Call now','callbar.book':'Quote',
+      'nav.contact':'Contact',
+      'contact.eyebrow':"Let's talk",
+      'contact.title1':'Your idea online',
+      'contact.title2':'this week.',
+      'contact.lead':'Available to call at any hour, or if you prefer, write to us directly via email, WhatsApp or social media.',
+      'contact.card_title':'Contact Info',
+      'contact.email_lbl':'Email Address',
+      'contact.tel_lbl':'Phone / WhatsApp',
+      'contact.ig_lbl':'Personal Instagram',
+      'contact.adr_lbl':'Headquarters'
     }
   };
 
@@ -601,132 +621,6 @@
   }
 
   /* =====================================================
-     ASISTENTE IA - CHATBOT
-  ===================================================== */
-  const BOT_ANSWERS = {
-    diseno: {
-      es: 'Nuestras páginas web destacan por una estética visual de lujo y un rendimiento impecable. Son 100% personalizadas (sin plantillas repetitivas), ultrarrápidas, adaptadas al móvil con efectos inmersivos y optimizadas para SEO. El objetivo es que tu cliente diga "Guau" al entrar. Puedes conocer los detalles en nuestra subpágina de <a href="diseno-web.html"><b>Diseño Web Premium</b></a>.',
-      en: 'Our websites stand out with premium visual aesthetics and flawless performance. They are 100% custom-made (no generic templates), ultra-fast, mobile-friendly with immersive effects, and fully optimized for SEO. The goal is to make your customers say "Wow" when they visit. You can read the details in our <a href="diseno-web.html"><b>Premium Web Design</b></a> subpage.'
-    },
-    software: {
-      es: 'Podemos dar vida a cualquier idea digital. Desde aplicaciones móviles a medida hasta software complejo. Ejemplos de uso: un sistema automático que genera una web de negocio en 1 minuto a partir del nombre y ubicación, o <a href="studio.html"><b>Valayre Studio</b></a>, nuestro software de IA textil. Tienes toda la información en la sección de <a href="software.html"><b>Software y Aplicaciones</b></a>.',
-      en: 'We can bring any digital idea to life. From custom mobile applications to complex enterprise software. Real examples: a system that automatically generates a website in 1 minute using only a business name and location, or <a href="studio.html"><b>Valayre Studio</b></a>, our textile AI tool. Find out more in our <a href="software.html"><b>Software</b></a> subpage.'
-    },
-    auto: {
-      es: 'La automatización permite que tu negocio funcione en piloto automático. Conectamos tus herramientas diarias (CRM, hojas de cálculo, email, WhatsApp) para facturar, agendar citas o gestionar inventario de forma automática sin errores manuales. Consulta más información en la página de <a href="automatizaciones.html"><b>Automatizaciones</b></a>.',
-      en: 'Automation lets your business run on autopilot. We connect your daily tools (CRM, spreadsheets, email, WhatsApp) to generate invoices, book appointments, or sync inventory automatically with zero manual errors. Learn more in our <a href="automatizaciones.html"><b>Automations</b></a> subpage.'
-    },
-    studio: {
-      es: 'Valayre Studio (<a href="https://studio.valayre.com" target="_blank">studio.valayre.com</a>) es nuestro software estrella para moda. Permite subir la foto de una prenda y, en 1 solo clic, la IA genera el modelo 3D con la prenda vestida, diseña fondos creativos de estudio y exporta un catálogo completo. Te invitamos a leer los detalles en nuestra página de <a href="studio.html"><b>Valayre Studio</b></a>.',
-      en: 'Valayre Studio (<a href="https://studio.valayre.com" target="_blank">studio.valayre.com</a>) is our flagship software for fashion. Upload a garment photo and, in 1 click, AI generates a 3D model wearing it, designs studio backgrounds, and exports a digital catalog. Read all about it in our <a href="studio.html"><b>Valayre Studio</b></a> page.'
-    },
-    textil: {
-      es: 'En la sección <a href="textil.html"><b>Textil</b></a> unimos la tecnología digital con prendas físicas: creamos marcas de ropa premium, bordados de alta definición y estampaciones TDF de gran calidad (pigmentos fundidos en el hilo que aguantan cientos de lavados sin cuartearse ni tacto áspero). Descubre nuestro catálogo físico en <a href="textil.html"><b>Showroom Textil</b></a>.',
-      en: 'In our <a href="textil.html"><b>Textile Showroom</b></a>, we merge digital tech with physical apparel: custom clothing lines, high-precision embroidery, and TDF printing (ink fused directly into threads that lasts hundreds of washes without cracking). Discover the gallery in our <a href="textil.html"><b>Textile</b></a> subpage.'
-    },
-    fallback: {
-      es: 'Interesante. Para darte una respuesta detallada a tu caso o un presupuesto a medida sin compromiso, puedes llamarnos directamente al <a href="tel:+34623286863"><b>+34 623 286 863</b></a> (disponibles 24/7) o escribirnos a hello@valayre.com. ¿Quieres que organicemos una llamada?',
-      en: 'Interesting! To give you a customized answer for your case or a budget with no strings attached, call us directly at <a href="tel:+34623286863"><b>+34 623 286 863</b></a> (available 24/7) or write us at hello@valayre.com. Shall we set up a quick phone call?'
-    }
-  };
-
-  function initChatbot(){
-    const chat = $('#aiChat'), trigger = $('#aiChatTrigger'), windowEl = $('#aiChatWindow'),
-          close = $('#aiChatClose'), form = $('#aiChatForm'), input = $('#aiChatInput'),
-          messages = $('#aiChatMessages'), suggestions = $('#aiChatSuggestions');
-
-    if (!chat || !trigger || !windowEl) return;
-
-    // Toggle window
-    trigger.addEventListener('click', () => {
-      chat.classList.toggle('is-open');
-      if (chat.classList.contains('is-open')) {
-        chat.setAttribute('aria-hidden', 'false');
-        setTimeout(() => input.focus(), 300);
-      } else {
-        chat.setAttribute('aria-hidden', 'true');
-      }
-    });
-
-    close.addEventListener('click', () => {
-      chat.classList.remove('is-open');
-      chat.setAttribute('aria-hidden', 'true');
-    });
-
-    // Handle suggestion buttons
-    suggestions.addEventListener('click', e => {
-      const btn = e.target.closest('.ai-chat__suggest-btn');
-      if (!btn) return;
-      const qKey = btn.getAttribute('data-q');
-      const questionText = btn.textContent;
-      askBot(qKey, questionText);
-    });
-
-    // Handle manual form submit
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      const txt = input.value.trim();
-      if (!txt) return;
-      input.value = '';
-
-      // Simple keyword detection to route response
-      const val = txt.toLowerCase();
-      let route = 'fallback';
-      if (val.includes('web') || val.includes('diseño') || val.includes('design') || val.includes('pantalla') || val.includes('móvil')) {
-        route = 'diseno';
-      } else if (val.includes('software') || val.includes('app') || val.includes('aplicación') || val.includes('programa')) {
-        route = 'software';
-      } else if (val.includes('auto') || val.includes('ahorro') || val.includes('agenda') || val.includes('zapier')) {
-        route = 'auto';
-      } else if (val.includes('studio') || val.includes('catálogo') || val.includes('lookbook')) {
-        route = 'studio';
-      } else if (val.includes('textil') || val.includes('ropa') || val.includes('prenda') || val.includes('tdf') || val.includes('bordado')) {
-        route = 'textil';
-      }
-
-      askBot(route, txt);
-    });
-
-    function askBot(answerKey, userText){
-      // Append user bubble
-      appendMessage(userText, 'user');
-      
-      // Remove suggestions to keep it clean, or keep them? We can hide them
-      suggestions.style.display = 'none';
-
-      // Typing simulation
-      const typingDot = document.createElement('div');
-      typingDot.className = 'ai-chat__bubble ai-chat__bubble--bot ai-chat__bubble--typing';
-      typingDot.innerHTML = '<span></span><span></span><span></span>';
-      messages.appendChild(typingDot);
-      messages.scrollTop = messages.scrollHeight;
-
-      setTimeout(() => {
-        // Remove typing bubble
-        typingDot.remove();
-
-        // Get translation
-        const responseHTML = BOT_ANSWERS[answerKey] ? BOT_ANSWERS[answerKey][LANG] : BOT_ANSWERS['fallback'][LANG];
-        appendMessage(responseHTML, 'bot');
-        
-        // Show suggestions back in a brief timeout
-        setTimeout(() => {
-          suggestions.style.display = 'flex';
-          messages.scrollTop = messages.scrollHeight;
-        }, 300);
-
-      }, 800);
-    }
-
-    function appendMessage(htmlContent, type) {
-      const bubble = document.createElement('div');
-      bubble.className = `ai-chat__bubble ai-chat__bubble--${type}`;
-      
-      const p = document.createElement('p');
-      p.innerHTML = htmlContent;
-      bubble.appendChild(p);
-      
-      messages.appendChild(bubble);
       messages.scrollTop = messages.scrollHeight;
     }
   }
@@ -753,7 +647,7 @@
     initScroll();
     initMobileMenu();
     initMarquee();
-    initChatbot();
+
 
     initLoader(() => {
       initInView();

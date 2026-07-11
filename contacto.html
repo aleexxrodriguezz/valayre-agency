@@ -2,18 +2,17 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Automatizaciones de Negocio con IA — Valayre Agency</title>
-  <meta name="description" content="Haz que tu empresa funcione sola. Conectamos tus herramientas y automatizamos tareas aburridas mediante IA." />
-  <meta name="theme-color" content="#FAF6EE" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="nav.contact">Contacto — Valayre Agency</title>
+  <meta name="description" content="Ponte en contacto con Valayre Agency. Tu idea online esta semana. Llámanos o escríbenos a cualquier hora." />
   <link rel="icon" type="image/png" href="assets/va-monogram.png" />
   <link rel="apple-touch-icon" href="assets/va-monogram.png" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Plus+Jakarta+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
 </head>
-<body data-page="automatizaciones" class="theme-auto">
+<body data-page="contacto" class="theme-contact">
 
   <!-- ===================== PRELOADER ===================== -->
   <div class="loader" id="loader" aria-hidden="true">
@@ -51,10 +50,10 @@
         <a href="index.html#enfoque" data-i18n="nav.approach">Enfoque</a>
         <a href="diseno-web.html" data-i18n="nav.web">Diseño Web</a>
         <a href="software.html" data-i18n="nav.software">Software</a>
-        <a href="automatizaciones.html" data-i18n="nav.auto" class="is-active">Automatizaciones</a>
+        <a href="automatizaciones.html" data-i18n="nav.auto">Automatizaciones</a>
         <a href="studio.html" data-i18n="nav.studio">Studio</a>
         <a href="textil.html" data-i18n="nav.textil">Textil</a>
-        <a href="contacto.html" data-i18n="nav.contact">Contacto</a>
+        <a href="contacto.html" data-i18n="nav.contact" class="is-active">Contacto</a>
       </nav>
 
       <div class="nav__actions">
@@ -72,9 +71,10 @@
       <a href="index.html" class="nav__mobile-link" data-i18n="nav.home">Inicio</a>
       <a href="diseno-web.html" class="nav__mobile-link" data-i18n="nav.web">Diseño Web</a>
       <a href="software.html" class="nav__mobile-link" data-i18n="nav.software">Software</a>
-      <a href="automatizaciones.html" class="nav__mobile-link is-active" data-i18n="nav.auto">Automatizaciones</a>
+      <a href="automatizaciones.html" class="nav__mobile-link" data-i18n="nav.auto">Automatizaciones</a>
       <a href="studio.html" class="nav__mobile-link" data-i18n="nav.studio">Valayre Studio</a>
       <a href="textil.html" class="nav__mobile-link" data-i18n="nav.textil">Showroom Textil</a>
+      <a href="contacto.html" class="nav__mobile-link is-active" data-i18n="nav.contact">Contacto</a>
       <a href="tel:+34623286863" class="nav__mobile-link nav__mobile-link--cta" data-i18n="nav.cta">Llamar ahora</a>
     </div>
   </header>
@@ -82,63 +82,58 @@
   <main>
     <!-- ===================== HERO ===================== -->
     <section class="sub-hero">
-      <div class="wrap">
-        <p class="eyebrow reveal" data-i18n="auto.eyebrow">EFICIENCIA Y AGILIDAD</p>
-        <h1 class="sub-hero__title">
-          <span class="line" data-i18n="auto.title1">Tu negocio funcionando</span>
-          <span class="line line--accent" data-i18n="auto.title2">en piloto automático.</span>
+      <div class="wrap sub-hero__inner">
+        <span class="eyebrow reveal" data-i18n="contact.eyebrow">Hablemos</span>
+        <h1 class="sub-hero__title reveal">
+          <span data-i18n="contact.title1">Tu idea online</span><br />
+          <span class="txt-accent" data-i18n="contact.title2">esta semana.</span>
         </h1>
-        <p class="sub-hero__lead reveal" data-i18n="auto.lead">
-          Conectamos tus sistemas diarios para que trabajen entre sí. Eliminamos el copiar y pegar datos, el envío manual de correos y la gestión lenta de agendas, dejando que la IA haga el trabajo pesado por ti.
+        <p class="sub-hero__lead reveal" data-i18n="contact.lead">
+          Disponibles para llamadas a cualquier hora, o si lo prefieres, escríbenos directamente por email, WhatsApp o redes sociales.
         </p>
       </div>
     </section>
 
-    <!-- ===================== AUTOMATION PROCESS GRID ===================== -->
-    <section class="auto-details">
+    <!-- ===================== CONTACT GRID ===================== -->
+    <section class="contact-section">
       <div class="wrap">
-        <div class="auto-visual-grid">
-          <!-- Item 1 -->
-          <div class="auto-visual-card reveal">
-            <div class="auto-visual-card__header">
-              <span class="avc-idx">01</span>
-              <h3 data-i18n="auto.c1.title">Administración y Facturación Cero</h3>
+        <div class="contact-grid">
+          <!-- Left details card -->
+          <div class="contact-details reveal">
+            <div class="contact-card">
+              <h2 class="contact-card__title" data-i18n="contact.card_title">Información de Contacto</h2>
+              
+              <div class="contact-card__item">
+                <span class="contact-card__label" data-i18n="contact.email_lbl">Correo Electrónico</span>
+                <a href="mailto:hello@valayre.com" class="contact-card__value" data-cursor="Escribir">hello@valayre.com</a>
+              </div>
+
+              <div class="contact-card__item">
+                <span class="contact-card__label" data-i18n="contact.tel_lbl">Teléfono / WhatsApp</span>
+                <a href="tel:+34623286863" class="contact-card__value" data-cursor="Llamar">+34 623 286 863</a>
+              </div>
+
+              <div class="contact-card__item">
+                <span class="contact-card__label" data-i18n="contact.ig_lbl">Instagram Personal</span>
+                <a href="https://instagram.com/aleexxrodriguezz" target="_blank" class="contact-card__value" data-cursor="Seguir">@aleexxrodriguezz</a>
+              </div>
+
+              <div class="contact-card__item">
+                <span class="contact-card__label" data-i18n="contact.adr_lbl">Oficina Central</span>
+                <p class="contact-card__value-text">
+                  Calle Limón, 20, Planta 0<br />
+                  Torrellano, Alicante, España
+                </p>
+              </div>
             </div>
-            <p class="avc-desc" data-i18n="auto.c1.desc">
-              Imagina que cada vez que un cliente te hace un pago, tu sistema automáticamente genera la factura estructurada, la envía por email, la registra en tu contabilidad y actualiza tu inventario en tiempo real. Todo sin intervención humana y sin errores.
-            </p>
           </div>
 
-          <!-- Item 2 -->
-          <div class="auto-visual-card reveal">
-            <div class="auto-visual-card__header">
-              <span class="avc-idx">02</span>
-              <h3 data-i18n="auto.c2.title">Atención al Cliente Inteligente 24/7</h3>
+          <!-- Right embedded map -->
+          <div class="contact-map reveal">
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3131.0664971842065!2d-0.5849896235650117!3d38.29955748208756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6234fe7d26bb2d%3A0xc47e3848b61c927f!2sC.%20Lim%C3%B3n%2C%2020%2C%2003320%20Torrellano%2C%20Alicante!5e0!3m2!1ses!2ses!4v1719600000000!5m2!1ses!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <p class="avc-desc" data-i18n="auto.c2.desc">
-              Instalamos asistentes de IA capaces de responder llamadas y chats de WhatsApp con lenguaje natural y conocimiento completo de tus servicios. Agendan reuniones, filtran dudas frecuentes de tus clientes y derivan solo las consultas de urgencia.
-            </p>
           </div>
-
-          <!-- Item 3 -->
-          <div class="auto-visual-card reveal">
-            <div class="auto-visual-card__header">
-              <span class="avc-idx">03</span>
-              <h3 data-i18n="auto.c3.title">Sincronización Total de Herramientas</h3>
-            </div>
-            <p class="avc-desc" data-i18n="auto.c3.desc">
-              ¿Usas CRM, Excel, correos de Outlook y herramientas de facturas separadas? Las conectamos todas mediante flujos automatizados (Zaps y webhooks avanzados) para que los datos viajen de forma segura al instante de una plataforma a otra.
-            </p>
-          </div>
-        </div>
-
-        <!-- CALL TO ACTION PANEL -->
-        <div class="auto-cta-panel reveal">
-          <h3 data-i18n="auto.panel.title">Libera a tu equipo de las tareas repetitivas</h3>
-          <p data-i18n="auto.panel.desc">
-            No pierdas horas introduciendo datos a mano. Llámanos a cualquier hora y analizamos qué tareas de tu negocio podemos automatizar esta misma semana para ahorrar costes y tiempo.
-          </p>
-          <a href="tel:+34623286863" class="btn btn--solid btn--lg" data-magnetic data-cursor="Llamar" data-i18n="auto.panel.cta">Analizar mis procesos</a>
         </div>
       </div>
     </section>
@@ -171,21 +166,14 @@
           <a href="automatizaciones.html" data-i18n="nav.auto">Automatizaciones</a>
           <a href="studio.html" data-i18n="nav.studio">Valayre Studio</a>
           <a href="textil.html" data-i18n="nav.textil">Textil</a>
+          <a href="contacto.html" data-i18n="nav.contact" class="is-active">Contacto</a>
         </div>
       </div>
     </div>
     <div class="wrap footer__bottom">
       <p>© <span id="year"></span> Valayre Agency</p>
-      <p class="footer__parent">Reprocesados Textiles Jars®</p>
     </div>
   </footer>
-
-  <!-- ===================== MOBILE CALL BAR ===================== -->
-  <div class="callbar" id="callbar">
-    <a href="tel:+34623286863" class="callbar__a callbar__call" data-i18n="callbar.call">Llamar ahora</a>
-    <a href="index.html#presupuesto" class="callbar__a callbar__book" data-i18n="callbar.book">Presupuesto</a>
-  </div>
-
 
 
   <script src="app.js"></script>
