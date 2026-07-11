@@ -17,7 +17,7 @@
   ===================================================== */
   const I18N = {
     es: {
-      'nav.approach':'Enfoque','nav.web':'Diseño Web','nav.software':'Software','nav.auto':'Automatizaciones','nav.studio':'Studio','nav.textil':'Textil','nav.cta':'Llamar ahora',
+      'nav.home':'Inicio','nav.approach':'Enfoque','nav.web':'Diseño Web','nav.software':'Software','nav.auto':'Automatizaciones','nav.studio':'Studio','nav.textil':'Textil','nav.cta':'Llamar ahora',
       'hero.eyebrow':'Diseño web a medida · Potenciado con IA',
       'hero.t1':'Páginas web a medida','hero.t2':'con el mejor diseño,','hero.t3':'potenciadas con IA.',
       'hero.lead':'Diseñamos y construimos webs premium a medida, con una estética impecable y funcionalidades de inteligencia artificial. Entrega rápida. Presupuesto a medida — llámanos a cualquier hora.',
@@ -152,7 +152,7 @@
       'callbar.call':'Llamar ahora','callbar.book':'Presupuesto'
     },
     en: {
-      'nav.approach':'Approach','nav.web':'Web Design','nav.software':'Software','nav.auto':'Automations','nav.studio':'Studio','nav.textil':'Textile','nav.cta':'Call now',
+      'nav.home':'Home','nav.approach':'Approach','nav.web':'Web Design','nav.software':'Software','nav.auto':'Automations','nav.studio':'Studio','nav.textil':'Textile','nav.cta':'Call now',
       'hero.eyebrow':'Bespoke web design · AI-powered',
       'hero.t1':'Bespoke websites','hero.t2':'with the best design,','hero.t3':'powered by AI.',
       'hero.lead':'We design and build premium bespoke websites with flawless aesthetics and AI features. Fast delivery. Tailored quote — call us at any hour.',
@@ -485,6 +485,23 @@
     addEventListener('scroll', onScroll, { passive:true });
   }
 
+  function initMobileMenu(){
+    const nav = $('#nav'), toggle = $('#navToggle');
+    if (!nav || !toggle) return;
+    toggle.addEventListener('click', e => {
+      e.stopPropagation();
+      nav.classList.toggle('is-open');
+    });
+    nav.querySelectorAll('.nav__mobile-link').forEach(link => {
+      link.addEventListener('click', () => nav.classList.remove('is-open'));
+    });
+    document.addEventListener('click', e => {
+      if (nav.classList.contains('is-open') && !nav.contains(e.target)) {
+        nav.classList.remove('is-open');
+      }
+    });
+  }
+
   /* =====================================================
      WEBGL SHADER BACKGROUND
   ===================================================== */
@@ -734,6 +751,7 @@
     initShader();
     initCursor();
     initScroll();
+    initMobileMenu();
     initMarquee();
     initChatbot();
 
