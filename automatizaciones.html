@@ -132,6 +132,210 @@
           </div>
         </div>
 
+        <!-- ===================== INTERACTIVE FLOW SIMULATOR ===================== -->
+        <div class="flow-section reveal">
+          <div class="flow-header">
+            <span class="eyebrow" data-i18n="auto.flow_eyebrow">TECNOLOGÍA EN ACCIÓN</span>
+            <h2 class="flow-section__title" data-i18n="auto.flow_title">Simulador de Flujos Automáticos</h2>
+            <p class="flow-section__desc" data-i18n="auto.flow_desc">Haz clic en las pestañas para ver cómo se conectan y automatizan las herramientas en tiempo real.</p>
+          </div>
+
+          <div class="flow-workspace">
+            <div class="flow-tabs">
+              <button class="flow-tab is-active" data-flow="ventas" data-i18n="auto.tab.sales">Captación de Leads</button>
+              <button class="flow-tab" data-flow="facturas" data-i18n="auto.tab.billing">Facturación y ERP</button>
+              <button class="flow-tab" data-flow="soporte" data-i18n="auto.tab.support">Atención y Agenda 24/7</button>
+            </div>
+
+            <div class="flow-canvas">
+              <!-- Flow 1 (Ventas) -->
+              <div class="flow-group active" id="flow-ventas">
+                <div class="flow-node flow-node--trigger">
+                  <div class="node-badge" data-i18n="auto.node.trigger">ENTRADA</div>
+                  <div class="node-icon">📩</div>
+                  <div class="node-info">
+                    <h4 data-i18n="auto.node.v1.title">Nuevo Lead</h4>
+                    <p data-i18n="auto.node.v1.desc">Formulario o email entrante</p>
+                  </div>
+                </div>
+                <div class="flow-arrow">✦</div>
+                <div class="flow-node flow-node--ai">
+                  <div class="node-badge" data-i18n="auto.node.ai">PROCESO IA</div>
+                  <div class="node-icon">🤖</div>
+                  <div class="node-info">
+                    <h4 data-i18n="auto.node.v2.title">Clasificación IA</h4>
+                    <p data-i18n="auto.node.v2.desc">GPT analiza y prioriza el lead</p>
+                  </div>
+                </div>
+                <div class="flow-arrow">✦</div>
+                <div class="flow-node flow-node--db">
+                  <div class="node-badge" data-i18n="auto.node.db">INTEGRACIÓN</div>
+                  <div class="node-icon">💼</div>
+                  <div class="node-info">
+                    <h4 data-i18n="auto.node.v3.title">Registro CRM</h4>
+                    <p data-i18n="auto.node.v3.desc">Lead guardado en HubSpot</p>
+                  </div>
+                </div>
+                <div class="flow-arrow">✦</div>
+                <div class="flow-node flow-node--done">
+                  <div class="node-badge" data-i18n="auto.node.done">SALIDA</div>
+                  <div class="node-icon">💬</div>
+                  <div class="node-info">
+                    <h4 data-i18n="auto.node.v4.title">WhatsApp / Slack</h4>
+                    <p data-i18n="auto.node.v4.desc">Notificación y bienvenida instantánea</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Flow 2 (Facturas) -->
+              <div class="flow-group" id="flow-facturas">
+                <div class="flow-node flow-node--trigger">
+                  <div class="node-badge" data-i18n="auto.node.trigger">ENTRADA</div>
+                  <div class="node-icon">💳</div>
+                  <div class="node-info">
+                    <h4 data-i18n="auto.node.f1.title">Pago Recibido</h4>
+                    <p data-i18n="auto.node.f1.desc">Cobro exitoso en Stripe</p>
+                  </div>
+                </div>
+                <div class="flow-arrow">✦</div>
+                <div class="flow-node flow-node--ai">
+                  <div class="node-badge" data-i18n="auto.node.ai">PROCESO IA</div>
+                  <div class="node-icon">📄</div>
+                  <div class="node-info">
+                    <h4 data-i18n="auto.node.f2.title">Extracción de Datos</h4>
+                    <p data-i18n="auto.node.f2.desc">IA asocia datos fiscales y tasas</p>
+                  </div>
+                </div>
+                <div class="flow-arrow">✦</div>
+                <div class="flow-node flow-node--db">
+                  <div class="node-badge" data-i18n="auto.node.db">INTEGRACIÓN</div>
+                  <div class="node-icon">🏦</div>
+                  <div class="node-info">
+                    <h4 data-i18n="auto.node.f3.title">Creación de Factura</h4>
+                    <p data-i18n="auto.node.f3.desc">Emitida y firmada en Holded</p>
+                  </div>
+                </div>
+                <div class="flow-arrow">✦</div>
+                <div class="flow-node flow-node--done">
+                  <div class="node-badge" data-i18n="auto.node.done">SALIDA</div>
+                  <div class="node-icon">📧</div>
+                  <div class="node-info">
+                    <h4 data-i18n="auto.node.f4.title">Envío y Archivo</h4>
+                    <p data-i18n="auto.node.f4.desc">Remitido en PDF y archivado en Drive</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Flow 3 (Soporte) -->
+              <div class="flow-group" id="flow-soporte">
+                <div class="flow-node flow-node--trigger">
+                  <div class="node-badge" data-i18n="auto.node.trigger">ENTRADA</div>
+                  <div class="node-icon">📱</div>
+                  <div class="node-info">
+                    <h4 data-i18n="auto.node.s1.title">Mensaje WhatsApp</h4>
+                    <p data-i18n="auto.node.s1.desc">Cliente solicita soporte o cita</p>
+                  </div>
+                </div>
+                <div class="flow-arrow">✦</div>
+                <div class="flow-node flow-node--ai">
+                  <div class="node-badge" data-i18n="auto.node.ai">PROCESO IA</div>
+                  <div class="node-icon">🗣️</div>
+                  <div class="node-info">
+                    <h4 data-i18n="auto.node.s2.title">Agente IA de Voz/Texto</h4>
+                    <p data-i18n="auto.node.s2.desc">Resuelve dudas y consulta horarios</p>
+                  </div>
+                </div>
+                <div class="flow-arrow">✦</div>
+                <div class="flow-node flow-node--db">
+                  <div class="node-badge" data-i18n="auto.node.db">INTEGRACIÓN</div>
+                  <div class="node-icon">📅</div>
+                  <div class="node-info">
+                    <h4 data-i18n="auto.node.s3.title">Agenda Automática</h4>
+                    <p data-i18n="auto.node.s3.desc">Cita agendada en Google Calendar</p>
+                  </div>
+                </div>
+                <div class="flow-arrow">✦</div>
+                <div class="flow-node flow-node--done">
+                  <div class="node-badge" data-i18n="auto.node.done">SALIDA</div>
+                  <div class="node-icon">🔔</div>
+                  <div class="node-info">
+                    <h4 data-i18n="auto.node.s4.title">SMS / Confirmación</h4>
+                    <p data-i18n="auto.node.s4.desc">Notificación y link de acceso Zoom</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================== PARALLAX IMAGE QUOTE BANNER ===================== -->
+        <div class="parallax-banner reveal">
+          <div class="parallax-bg"></div>
+          <div class="parallax-overlay"></div>
+          <div class="parallax-content">
+            <blockquote class="parallax-quote" data-i18n="auto.parallax_quote">
+              "La eficiencia no es hacer más cosas, es hacer que las cosas se hagan solas."
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- ===================== ROI CALCULATOR ===================== -->
+        <div class="roi-section reveal">
+          <div class="roi-grid">
+            <div class="roi-info">
+              <span class="eyebrow" data-i18n="auto.roi_eyebrow">RETORNO DE INVERSIÓN</span>
+              <h2 class="roi-section__title" data-i18n="auto.roi_title">Calcula el Ahorro de tu Empresa</h2>
+              <p class="roi-section__desc" data-i18n="auto.roi_desc">Mueve los controles para ver cuántas horas y dinero puedes recuperar automatizando tus procesos manuales.</p>
+              
+              <div class="roi-controls">
+                <!-- Control 1 -->
+                <div class="roi-slider-group">
+                  <div class="roi-slider-labels">
+                    <span data-i18n="auto.roi.hours_label">Horas diarias en tareas manuales</span>
+                    <span class="roi-slider-value"><span id="valHours">4</span>h</span>
+                  </div>
+                  <input type="range" class="roi-slider" id="sliderHours" min="1" max="8" value="4" />
+                </div>
+
+                <!-- Control 2 -->
+                <div class="roi-slider-group">
+                  <div class="roi-slider-labels">
+                    <span data-i18n="auto.roi.employees_label">Empleados que hacen esa tarea</span>
+                    <span class="roi-slider-value" id="valEmployees">3</span>
+                  </div>
+                  <input type="range" class="roi-slider" id="sliderEmployees" min="1" max="15" value="3" />
+                </div>
+
+                <!-- Control 3 -->
+                <div class="roi-slider-group">
+                  <div class="roi-slider-labels">
+                    <span data-i18n="auto.roi.cost_label">Coste medio por hora del empleado</span>
+                    <span class="roi-slider-value"><span id="valCost">20</span>€</span>
+                  </div>
+                  <input type="range" class="roi-slider" id="sliderCost" min="10" max="50" value="20" />
+                </div>
+              </div>
+            </div>
+
+            <div class="roi-results">
+              <div class="roi-card">
+                <div class="roi-stat-box">
+                  <h4 data-i18n="auto.roi.stat_hours">Horas anuales recuperadas</h4>
+                  <p class="roi-stat" id="statHours">2.640h</p>
+                </div>
+                <div class="roi-stat-box">
+                  <h4 data-i18n="auto.roi.stat_money">Ahorro anual estimado</h4>
+                  <p class="roi-stat roi-stat--accent" id="statMoney">52.800 €</p>
+                </div>
+                <div class="roi-stat-box">
+                  <h4 data-i18n="auto.roi.stat_boost">Eficiencia de Procesos</h4>
+                  <p class="roi-stat" id="statBoost">+85%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- CALL TO ACTION PANEL -->
         <div class="auto-cta-panel reveal">
           <h3 data-i18n="auto.panel.title">Libera a tu equipo de las tareas repetitivas</h3>

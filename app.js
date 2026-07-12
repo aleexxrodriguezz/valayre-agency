@@ -85,6 +85,19 @@
       'soft.case2.desc2':'Un desarrollo complejo que permite a las empresas textiles ahorrar miles de euros en fotógrafos, modelos físicos, alquiler de estudios y edición gráfica, teniendo colecciones enteras listas para vender en minutos.',
       'soft.case2.cta':'Saber más de Studio',
 
+      // Software Capabilities
+      'soft.cap.eyebrow':'TECNOLOGÍA SIN LÍMITES',
+      'soft.cap.title':'Especialidades de Ingeniería de Software',
+      'soft.cap.desc':'Desarrollamos cualquier tipo de arquitectura técnica, garantizando escalabilidad, seguridad y velocidad absoluta.',
+      'soft.cap.c1.title':'Plataformas SaaS & Modelos de IA',
+      'soft.cap.c1.desc':'Desarrollamos arquitecturas de software como servicio (SaaS) con integraciones nativas de Inteligencia Artificial. Conectamos modelos de lenguaje (LLMs), visión artificial y procesamiento de datos complejos para resolver cuellos de botella empresariales con rapidez excepcional.',
+      'soft.cap.c2.title':'Aplicaciones Móviles Nativas & PWAs',
+      'soft.cap.c2.desc':'Creamos aplicaciones fluidas para iOS y Android con experiencias de usuario cuidadas al milímetro. Sacamos el máximo partido al hardware del dispositivo (cámara, biometría, GPS y notificaciones push) asegurando un rendimiento estable a 60fps.',
+      'soft.cap.c3.title':'ERPs & Sistemas de Gestión a Medida',
+      'soft.cap.c3.desc':'Diseñamos herramientas de gestión interna y bases de datos a medida para automatizar el control de stock, la logística física, la coordinación de operarios y la facturación, eliminando por completo las limitaciones y licencias mensuales de las herramientas cerradas.',
+      'soft.cap.c4.title':'Fintech & Arquitecturas Transaccionales',
+      'soft.cap.c4.desc':'Construimos pasarelas de pago ultraseguras, sistemas de cobro recurrente adaptados a tu facturación, conciliación de cuentas y arquitecturas criptográficas o Web3 de alta fiabilidad, garantizando que el dinero se procese y fluya con total seguridad.',
+
       // Subpages: Automations
       'auto.eyebrow':'EFICIENCIA Y AGILIDAD',
       'auto.title1':'Tu negocio funcionando',
@@ -99,6 +112,52 @@
       'auto.panel.title':'Libera a tu equipo de las tareas repetitivas',
       'auto.panel.desc':'No pierdas horas introduciendo datos a mano. Llámanos a cualquier hora y analizamos qué tareas de tu negocio podemos automatizar esta misma semana para ahorrar costes y tiempo.',
       'auto.panel.cta':'Analizar mis procesos',
+
+      // Interactive Flow Builder & ROI
+      'auto.flow_eyebrow':'TECNOLOGÍA EN ACCIÓN',
+      'auto.flow_title':'Simulador de Flujos Automáticos',
+      'auto.flow_desc':'Haz clic en las pestañas para ver cómo se conectan y automatizan las herramientas en tiempo real.',
+      'auto.tab.sales':'Captación de Leads',
+      'auto.tab.billing':'Facturación y ERP',
+      'auto.tab.support':'Atención y Agenda 24/7',
+      'auto.node.trigger':'ENTRADA',
+      'auto.node.ai':'PROCESO IA',
+      'auto.node.db':'INTEGRACIÓN',
+      'auto.node.done':'SALIDA',
+      'auto.node.v1.title':'Nuevo Lead',
+      'auto.node.v1.desc':'Formulario o email entrante',
+      'auto.node.v2.title':'Clasificación IA',
+      'auto.node.v2.desc':'GPT analiza y prioriza el lead',
+      'auto.node.v3.title':'Registro CRM',
+      'auto.node.v3.desc':'Lead guardado en HubSpot',
+      'auto.node.v4.title':'WhatsApp / Slack',
+      'auto.node.v4.desc':'Notificación y bienvenida instantánea',
+      'auto.node.f1.title':'Pago Recibido',
+      'auto.node.f1.desc':'Cobro exitoso en Stripe',
+      'auto.node.f2.title':'Extracción de Datos',
+      'auto.node.f2.desc':'IA asocia datos fiscales y tasas',
+      'auto.node.f3.title':'Creación de Factura',
+      'auto.node.f3.desc':'Emitida y firmada en Holded',
+      'auto.node.f4.title':'Envío y Archivo',
+      'auto.node.f4.desc':'Remitido en PDF y archivado en Drive',
+      'auto.node.s1.title':'Mensaje WhatsApp',
+      'auto.node.s1.desc':'Cliente solicita soporte o cita',
+      'auto.node.s2.title':'Agente IA de Voz/Texto',
+      'auto.node.s2.desc':'Resuelve dudas y consulta horarios',
+      'auto.node.s3.title':'Agenda Automática',
+      'auto.node.s3.desc':'Cita agendada en Google Calendar',
+      'auto.node.s4.title':'SMS / Confirmación',
+      'auto.node.s4.desc':'Notificación y link de acceso Zoom',
+      'auto.parallax_quote':'"La eficiencia no es hacer más cosas, es hacer que las cosas se hagan solas."',
+      'auto.roi_eyebrow':'RETORNO DE INVERSIÓN',
+      'auto.roi_title':'Calcula el Ahorro de tu Empresa',
+      'auto.roi_desc':'Mueve los controles para ver cuántas horas y dinero puedes recuperar automatizando tus procesos manuales.',
+      'auto.roi.hours_label':'Horas diarias en tareas manuales',
+      'auto.roi.employees_label':'Empleados que hacen esa tarea',
+      'auto.roi.cost_label':'Coste medio por hora del empleado',
+      'auto.roi.stat_hours':'Horas anuales recuperadas',
+      'auto.roi.stat_money':'Ahorro anual estimado',
+      'auto.roi.stat_boost':'Eficiencia de Procesos',
 
       // Subpages: Studio
       'studio.eyebrow':'TECNOLOGÍA REVOLUCIONARIA',
@@ -230,6 +289,19 @@
       'soft.case2.desc2':'A complex development that lets textile companies save thousands of euros in photographers, physical models, studio rentals, and graphic editing, having entire collections ready to sell in minutes.',
       'soft.case2.cta':'Learn more about Studio',
 
+      // Software Capabilities
+      'soft.cap.eyebrow':'LIMITLESS TECHNOLOGY',
+      'soft.cap.title':'Software Engineering Specialties',
+      'soft.cap.desc':'We develop any type of technical architecture, guaranteeing scalability, security, and absolute speed.',
+      'soft.cap.c1.title':'SaaS Platforms & AI Models',
+      'soft.cap.c1.desc':'We develop Software as a Service (SaaS) architectures with native AI integrations. We connect language models (LLMs), computer vision, and complex data processing to solve business bottlenecks with exceptional speed.',
+      'soft.cap.c2.title':'Native Mobile Apps & PWAs',
+      'soft.cap.c2.desc':'We build fluid applications for iOS and Android with pixel-perfect user experiences. We get the most out of device hardware (camera, biometrics, GPS, and push notifications) ensuring stable performance at 60fps.',
+      'soft.cap.c3.title':'Bespoke ERPs & Management Systems',
+      'soft.cap.c3.desc':'We design internal management tools and databases to automate stock control, physical logistics, worker coordination, and invoicing, completely eliminating the limitations and monthly licenses of closed software.',
+      'soft.cap.c4.title':'Fintech & Transactional Architectures',
+      'soft.cap.c4.desc':'We construct ultra-secure payment gateways, recurring billing systems tailored to your invoicing flow, ledger reconciliation, and highly reliable cryptographic or Web3 architectures, guaranteeing that funds flow safely.',
+
       // Subpages: Automations
       'auto.eyebrow':'EFFICIENCY & AGILITY',
       'auto.title1':'Your business running',
@@ -244,6 +316,52 @@
       'auto.panel.title':'Free your team from repetitive tasks',
       'auto.panel.desc':'Don\'t waste hours entering data manually. Call us at any hour, and we\'ll analyze which business tasks we can automate this week to save time and costs.',
       'auto.panel.cta':'Analyze my processes',
+
+      // Interactive Flow Builder & ROI
+      'auto.flow_eyebrow':'TECHNOLOGY IN ACTION',
+      'auto.flow_title':'Automated Workflow Simulator',
+      'auto.flow_desc':'Click the tabs to see how tools connect and automate in real time.',
+      'auto.tab.sales':'Lead Capture',
+      'auto.tab.billing':'Invoicing & ERP',
+      'auto.tab.support':'Support & Calendar 24/7',
+      'auto.node.trigger':'INPUT',
+      'auto.node.ai':'AI PROCESS',
+      'auto.node.db':'INTEGRATION',
+      'auto.node.done':'OUTPUT',
+      'auto.node.v1.title':'New Lead',
+      'auto.node.v1.desc':'Web form or incoming email',
+      'auto.node.v2.title':'AI Classification',
+      'auto.node.v2.desc':'GPT analyzes intent & prioritizes',
+      'auto.node.v3.title':'CRM Update',
+      'auto.node.v3.desc':'Lead saved in HubSpot automatically',
+      'auto.node.v4.title':'WhatsApp / Slack',
+      'auto.node.v4.desc':'Instant welcome text & sales notification',
+      'auto.node.f1.title':'Payment Received',
+      'auto.node.f1.desc':'Successful charge in Stripe',
+      'auto.node.f2.title':'Data Extraction',
+      'auto.node.f2.desc':'AI matches fiscal data & taxes',
+      'auto.node.f3.title':'Invoice Creation',
+      'auto.node.f3.desc':'Generated & signed in Holded',
+      'auto.node.f4.title':'Send & Archive',
+      'auto.node.f4.desc':'PDF sent via email & archived in Google Drive',
+      'auto.node.s1.title':'WhatsApp Message',
+      'auto.node.s1.desc':'Client requests support or appointment',
+      'auto.node.s2.title':'AI Voice/Text Agent',
+      'auto.node.s2.desc':'Answers questions & queries calendar availability',
+      'auto.node.s3.title':'Automated Booking',
+      'auto.node.s3.desc':'Meeting booked in Google Calendar',
+      'auto.node.s4.title':'SMS / Confirmation',
+      'auto.node.s4.desc':'Confirmation SMS sent with Zoom link',
+      'auto.parallax_quote':'"Efficiency is not about doing more, it is about letting things happen on their own."',
+      'auto.roi_eyebrow':'RETURN ON INVESTMENT',
+      'auto.roi_title':'Calculate Your Business Savings',
+      'auto.roi_desc':'Move the controls to see how many hours and money you can recover by automating manual tasks.',
+      'auto.roi.hours_label':'Daily hours spent on manual tasks',
+      'auto.roi.employees_label':'Employees performing this task',
+      'auto.roi.cost_label':'Average employee hourly wage',
+      'auto.roi.stat_hours':'Annual hours recovered',
+      'auto.roi.stat_money':'Estimated annual savings',
+      'auto.roi.stat_boost':'Process Efficiency',
 
       // Subpages: Studio
       'studio.eyebrow':'REVOLUTIONARY TECHNOLOGY',
@@ -621,8 +739,103 @@
   }
 
   /* =====================================================
-      messages.scrollTop = messages.scrollHeight;
+     SIMULADOR DE FLUJOS INTERACTIVO
+  ===================================================== */
+  function initFlowSimulator() {
+    const tabs = $$('.flow-tab');
+    const groups = $$('.flow-group');
+    if (!tabs.length || !groups.length) return;
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const flowName = tab.getAttribute('data-flow');
+        
+        // Update active tab
+        tabs.forEach(t => t.classList.remove('is-active'));
+        tab.classList.add('is-active');
+
+        // Update active group
+        groups.forEach(g => {
+          g.classList.remove('active');
+          if (g.id === `flow-${flowName}`) {
+            g.classList.add('active');
+          }
+        });
+      });
+    });
+  }
+
+  /* =====================================================
+     CALCULADORA DE ROI
+  ===================================================== */
+  function initRoiCalculator() {
+    const sliderHours = $('#sliderHours');
+    const sliderEmployees = $('#sliderEmployees');
+    const sliderCost = $('#sliderCost');
+
+    const valHours = $('#valHours');
+    const valEmployees = $('#valEmployees');
+    const valCost = $('#valCost');
+
+    const statHours = $('#statHours');
+    const statMoney = $('#statMoney');
+
+    if (!sliderHours || !sliderEmployees || !sliderCost) return;
+
+    function calculate() {
+      const h = parseInt(sliderHours.value);
+      const e = parseInt(sliderEmployees.value);
+      const c = parseInt(sliderCost.value);
+
+      // Render slider values
+      if (valHours) valHours.textContent = h;
+      if (valEmployees) valEmployees.textContent = e;
+      if (valCost) valCost.textContent = c;
+
+      // Maths: 220 working days/year
+      const annualHours = h * e * 220;
+      const annualMoney = annualHours * c;
+
+      // Format outputs
+      if (statHours) {
+        statHours.textContent = new Intl.NumberFormat(LANG === 'es' ? 'es-ES' : 'en-US').format(annualHours) + 'h';
+      }
+      if (statMoney) {
+        statMoney.textContent = new Intl.NumberFormat(LANG === 'es' ? 'es-ES' : 'en-US').format(annualMoney) + ' €';
+      }
     }
+
+    [sliderHours, sliderEmployees, sliderCost].forEach(slider => {
+      slider.addEventListener('input', calculate);
+    });
+
+    // Run once on load
+    calculate();
+  }
+
+  /* =====================================================
+     EFECTO PARALLAX
+  ===================================================== */
+  function initParallax() {
+    const bg = $('.parallax-bg');
+    if (!bg) return;
+    
+    // Check if element is in viewport
+    const container = document.querySelector('.parallax-banner');
+    if (!container) return;
+
+    window.addEventListener('scroll', () => {
+      const rect = container.getBoundingClientRect();
+      const viewHeight = window.innerHeight;
+      
+      // Calculate how far down the section is scrolled
+      if (rect.top < viewHeight && rect.bottom > 0) {
+        const scrolledFraction = (viewHeight - rect.top) / (viewHeight + rect.height);
+        // Translate image by up to 20% of banner height
+        const translateVal = (scrolledFraction - 0.5) * 80; // range: -40px to +40px
+        bg.style.transform = `translate3d(0, ${translateVal}px, 0)`;
+      }
+    });
   }
 
   /* =====================================================
@@ -647,6 +860,9 @@
     initScroll();
     initMobileMenu();
     initMarquee();
+    initFlowSimulator();
+    initRoiCalculator();
+    initParallax();
 
 
     initLoader(() => {
